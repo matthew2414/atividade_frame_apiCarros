@@ -1,9 +1,9 @@
 import React from 'react';
 import { Route, BrowserRouter } from "react-router-dom";
 
-import CarrosVelhos from '../pages/Carros_velhos'
-import CarrosEsportivos from '../pages/Carros_esportivos'
-import CarrosComuns from '../pages/Carros_comuns'
+import CarrosVelhos from '../pages/Carros_velhos/Carros_velhos'
+import CarrosEsportivos from '../pages/Carros_esportivos/Carros_esportivos'
+import CarrosComuns from '../pages/Carros_comuns/Carros_comuns'
 
 function Navigation() {
   return (

@@ -1,3 +1,4 @@
+import './Home.css'
 import React from 'react';  
 import { Link } from 'react-router-dom';
 import Navigation from '../components/Navigation'
@@ -8,7 +9,7 @@ function Home() {
         <>
             <Navigation>
                 
-                <button> olh </button>
+                <button> olha </button>
 
                 <Link to="/velhos"> Velhos </Link>
 
