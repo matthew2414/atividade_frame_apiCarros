@@ -1,14 +1,17 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Route, BrowserRouter } from "react-router-dom";
+
+import CarrosVelhos from '../pages/Carros_velhos'
+import CarrosEsportivos from '../pages/Carros_esportivos'
+import CarrosComuns from '../pages/Carros_comuns'
 
 function Navigation() {
   return (
-    <>
-                        
-            <button> Carros Velhos </button>
-            <button> Carros Esportivos </button>
-            <button> Carros Comuns </button>
-    </>
+       <BrowserRouter>
+          <Route component = { CarrosVelhos }  path="/velhos" />
+          <Route component = { CarrosEsportivos }  path="/esportivos" />
+          <Route component = { CarrosComuns }  path="/comuns" />
+       </BrowserRouter>
   );
 }
 
