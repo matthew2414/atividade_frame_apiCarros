@@ -1,11 +1,12 @@
 import { useState, useEffect } from 'react'
-import styles from './comuns.css'
-
+import Header from '../../components/Header'
 
 function CarrosComuns() {
     return (
         <>
-            <button> </button>
+            <Header> </Header>
+
+            <h1> Carros Comuns </h1>
         </>
     )
 }

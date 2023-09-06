@@ -1,0 +1,21 @@
+#root{
+    margin: 0;
+    width: 100%;
+
+}
+
+#head {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#div-head {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 70px 10px 70px;
+    background-color: rgb(47, 47, 50);
+}

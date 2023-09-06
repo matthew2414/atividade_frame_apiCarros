@@ -1,10 +1,9 @@
-import Home from './pages/Home';
-
+import Navigation from './Routes';
 
 function App() {
 
   return (
-    <Home />
+    <Navigation />
   )
 }
 

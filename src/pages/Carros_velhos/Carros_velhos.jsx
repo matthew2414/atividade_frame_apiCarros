@@ -1,12 +1,11 @@
+import React from 'react'
+import Header from '../../components/Header'
+
 function CarrosVelhos() {
     return (
         <>
-        <h1>Atividades Carros</h1>
-            <section className = "">
-                <div>
-
-                </div>
-            </section>
+            <Header> </Header>
+            <h1> Carros Velhos </h1>
         </>
     )
 }
