@@ -1,0 +1,17 @@
+#div-card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: block 1px white;
+    width: 300px;
+    height: 400px;
+    background-color: grey;
+    border-radius: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#img-card {
+    width: 70%;
+    height:  70%;
+}

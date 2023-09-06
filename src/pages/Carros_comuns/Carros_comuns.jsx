@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import Header from '../../components/Header'
+import Header from '../../components/Header/Header'
+import Card from '../../components/Card/Card'
 
 function CarrosComuns() {
 
@@ -17,6 +18,8 @@ function CarrosComuns() {
             <Header> </Header>
 
             <h1> Carros Comuns </h1>
+
+            <Card> </Card>
         </>
     )
 }
