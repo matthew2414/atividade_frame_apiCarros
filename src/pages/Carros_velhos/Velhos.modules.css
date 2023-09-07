@@ -1,0 +1,20 @@
+
+.carros-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .carro-card {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    max-width: 300px;
+    text-align: center;
+  }
+  
+  .carro-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
