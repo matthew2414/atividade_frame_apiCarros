@@ -1,15 +1,15 @@
-import styles from './Card.modules.css'
+import './Card.modules.css'
 import React from 'react'
 
-function Card() {
+function Card(carros) {
     return(
         <div id="div-card"> 
-            <img id="img-card" /> <p></p>
+            <img id="img-card" src={carros.imagem_url} /> <p></p>
             
             <div> 
-                <label id="modelo"> Modelo: </label> <p></p>
-                <label id="ano"> Ano: </label> <p></p>
-                <label id="cor"> Cor: </label> <p></p>
+                <h3 id="modelo"> Modelo: {carros.modelo}</h3> <p></p>
+                <h3 id="ano"> Ano: {carros.ano}</h3> <p></p>
+                <h3 id="cor"> Cor: {carros.cor}</h3> <p></p>
             </div>
         </div>  
     )

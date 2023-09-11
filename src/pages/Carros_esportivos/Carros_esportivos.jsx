@@ -1,5 +1,7 @@
 import Header from '../../components/Header/Header'
 import React, { useState, useEffect } from 'react';
+import Card from '../../components/Card/Card'
+
 
 function CarrosEsportivos() {
 
@@ -17,9 +19,13 @@ function CarrosEsportivos() {
             <Header> </Header>
 
             <h1> Carros Esportivos </h1>
-            <div></div>
+            <div>
+                
+            </div>
         </>
     )
 }
 
 export default CarrosEsportivos
+
+//sandra, tentei mas falhei
