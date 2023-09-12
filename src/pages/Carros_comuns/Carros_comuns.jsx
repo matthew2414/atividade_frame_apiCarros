@@ -7,11 +7,17 @@ function CarrosComuns() {
     const [dados, setDados] = useState([]);
 
     useEffect(() => {
-        fetch('https://raw.githubusercontent.com/matthew2414/apiCarros/main/ApiCarros.json')
-          .then((response) => response.json())
-          .then((data) => setDados(data))
-          .catch((error) => console.error(error));
-    }, []);
+
+        const buscarcarros = async ()=>{ 
+
+            const response = await fetch('https://raw.githubusercontent.com/matthew2414/apiCarros/main/ApiCarros.json')
+            const carros = await response.json()
+            setDados(carros.carros_comuns)
+            console.log(carros.carros_comuns);
+        }
+
+        buscarcarros()
+    }, [])
 
     return (
         <>
@@ -19,7 +25,20 @@ function CarrosComuns() {
 
             <h1> Carros Comuns </h1>
 
-            <Card> </Card>
+            <div className='Car_Comun'>
+
+                {
+                    dados.map((car) => (
+                        <Card
+                            imagem={car.imagem_url}
+                            modelo={car.modelo}
+                            ano={car.ano}
+                            cor={car.cor}
+                        />
+                    ))
+                }
+
+            </div>
         </>
     )
 }

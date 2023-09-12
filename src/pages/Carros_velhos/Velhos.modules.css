@@ -1,20 +1,12 @@
-
-.carros-list {
+ .Car_Velho {
+    width: 100%;
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
   }
-  
-  .carro-card {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    max-width: 300px;
-    text-align: center;
-  }
-  
-  .carro-card img {
-    max-width: 100%;
-    height: auto;
+
+  h1{
+    margin-bottom: 100px;
   }
   
