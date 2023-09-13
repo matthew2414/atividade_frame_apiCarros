@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../../components/Header/Header'
 import Card from '../../components/Card/Card'
+import '../Carros_comuns/Comuns.modules.css'
 
 function CarrosComuns() {
 

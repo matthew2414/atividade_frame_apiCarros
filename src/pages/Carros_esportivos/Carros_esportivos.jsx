@@ -1,7 +1,7 @@
 import Header from '../../components/Header/Header'
 import React, { useState, useEffect } from 'react';
 import Card from '../../components/Card/Card'
-import '../Carros_esportivos/Esportivos.modules.css'
+import '../../pages/Carros_esportivos/Esportivos.modules.css'
 
 function CarrosEsportivos() {
 
@@ -25,8 +25,9 @@ function CarrosEsportivos() {
             <Header> </Header>
 
             <h1> Carros Esportivos </h1>
-            <div classname='Car_Esportivo'>
-            {
+            <div className='Car_Comun'>
+
+                {
                     dados.map((car) => (
                         <Card
                             imagem={car.imagem_url}
@@ -36,6 +37,7 @@ function CarrosEsportivos() {
                         />
                     ))
                 }
+
             </div>
         </>
     )
